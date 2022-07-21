@@ -1,0 +1,2109 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jul 18 15:30:47 2022
+# Process ID: 8972
+# Current directory: C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5288 C:\Users\abdk_\Desktop\Elektronik\Yongatek_Staj\slemciTasarimi\yonga02\yonga02.xpr
+# Log file: C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/vivado.log
+# Journal file: C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.xpr
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/isa_package_.sv:]
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/isa_package_.sv:]
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 698.430 ; gain = 66.473
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/tb_behav.wcfg
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 787.828 ; gain = 45.500
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2458] undeclared symbol write_ctrl, assumed default net type wire [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:50]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'write_ctrl_' on this module [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:50]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+current_wave_config {tb_behav.wcfg}
+tb_behav.wcfg
+add_wave {{/tb/dut/write_ctrl_}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+current_wave_config {tb_behav.wcfg}
+tb_behav.wcfg
+add_wave {{/tb/dut/reg1/write_ctrl}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Jul 19 09:10:41 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 787.828 ; gain = 0.000
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+ERROR: [VRFC 10-1412] syntax error near : [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv:93]
+ERROR: [VRFC 10-2865] module 'ALU' ignored due to previous errors [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv:29]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 200 ns
+run 200 ns
+run 200 ns
+current_wave_config {tb_behav.wcfg}
+tb_behav.wcfg
+add_wave {{/tb/dut/aludef/write_ctrl}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 200 ns
+run 200 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 200 ns
+run 200 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 200 ns
+run 200 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 787.828 ; gain = 0.000
+run 200 ns
+run 200 ns
+save_wave_config {C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/tb_behav.wcfg}
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close [ open C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v w ]
+add_files C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v
+close [ open C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_tx.sv w ]
+add_files C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_tx.sv
+update_compile_order -fileset sources_1
+set_property file_type SystemVerilog [get_files  C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v]
+close [ open C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv w ]
+add_files C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'instruction_t' on this module [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv:91]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2458] undeclared symbol instruction_t, assumed default net type wire [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:58]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:58]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:60]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:61]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 834.598 ; gain = 0.777
+run 100 ns
+run 100 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2458] undeclared symbol instruction_t, assumed default net type wire [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:58]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:58]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:60]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:61]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+current_wave_config {tb_behav.wcfg}
+C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/tb_behav.wcfg
+add_wave {{/tb/dut/aludef/instruction}} 
+save_wave_config {C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/tb_behav.wcfg}
+current_wave_config {tb_behav.wcfg}
+C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/tb_behav.wcfg
+add_wave {{/tb/dut/uart_instantiation/data_package}} 
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2458] undeclared symbol instruction_t, assumed default net type wire [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:58]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:58]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:60]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:61]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2458] undeclared symbol instruction_t, assumed default net type wire [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:58]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:58]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:60]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:61]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 853.129 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2458] undeclared symbol instruction_t, assumed default net type wire [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:58]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2458] undeclared symbol clk_per_bit, assumed default net type wire [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv:93]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'clk_per_bit' on this module [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv:93]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2458] undeclared symbol instruction_t, assumed default net type wire [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:58]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:58]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:60]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:61]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/tb_behav.wcfg
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+current_wave_config {tb_behav.wcfg}
+tb_behav.wcfg
+add_wave {{/tb/dut/decoder_instantiation/data_package}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:58]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:60]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:61]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+current_wave_config {tb_behav.wcfg}
+tb_behav.wcfg
+add_wave {{/tb/dut/decoder_instantiation/uart_data}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:58]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:60]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:61]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+current_wave_config {tb_behav.wcfg}
+tb_behav.wcfg
+add_wave {{/tb/dut/decoder_instantiation/instruction}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:58]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:60]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'instruction' [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:61]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+save_wave_config {C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/tb_behav.wcfg}
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3823] variable 'instruction_t' might have multiple concurrent drivers [C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv:58]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 939.109 ; gain = 7.949
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 939.234 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 939.234 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 4000 ns
+run 4000 ns
+run 4000 ns
+run 4000 ns
+run 4000 ns
+run 4000 ns
+run 5000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1390.840 ; gain = 0.000
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+current_wave_config {tb_behav.wcfg}
+C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/tb_behav.wcfg
+add_wave {{/tb/dut/reg1/reg_file[4]}} 
+current_wave_config {tb_behav.wcfg}
+C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/tb_behav.wcfg
+add_wave {{/tb/dut/reg1/reg_file[7]}} 
+save_wave_config {C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/tb_behav.wcfg}
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abdk_/Desktop/Elektronik/Yongatek_Staj/slemciTasarimi/yonga02/yonga02.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 178dfbc6243b4553b1c9c55c4855e0d8 --incr --debug typical --relax --mt 2 -L isa_package -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.isa_package
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1412.023 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 19 23:28:22 2022...

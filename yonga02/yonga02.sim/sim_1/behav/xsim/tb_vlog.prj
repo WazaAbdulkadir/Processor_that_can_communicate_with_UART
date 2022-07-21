@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+sv isa_package  \
+"../../../../yonga02.srcs/sources_1/new/isa_package_.sv" \
+
+sv xil_defaultlib  \
+"../../../../yonga02.srcs/sources_1/new/ALU.sv" \
+"../../../../yonga02.srcs/sources_1/new/decoder.sv" \
+"../../../../yonga02.srcs/sources_1/new/processor.sv" \
+"../../../../yonga02.srcs/sources_1/new/regfile.sv" \
+"../../../../yonga02.srcs/sources_1/new/uart_rx.v" \
+"../../../../yonga02.srcs/sources_1/new/uart_tx.sv" \
+"../../../../yonga02.srcs/sim_1/new/tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
